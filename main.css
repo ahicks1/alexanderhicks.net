@@ -1,60 +1,122 @@
 
 html, body {
     height: 100%;
+    width: 100%;
 }
 body {
     margin: 0;
+    
 }
 .flex-container {
     height: 100%;
+    width: 60%;
     padding: 0;
-    margin: 0;
+    margin: auto;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: flex-start;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
 }
 
 .form-container {
   flex:1;
 }
 
-#thanks-text {
-  display:none;
+.social-links {
+  font-family: rift, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
 }
+
+
 
 .main-logo {
-  width: 20em;
+  width: 9em;
+  margin-top: 10em;
+  margin-bottom: .5em;
 }
 
-.social-links {
+h1 {
+  font-family: rift, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 6em;
+  margin: 0;
+  padding-top:0;
+  line-height:0.9;
+}
+
+
+h2 {
+  font-family: rift, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2em;
+  padding-bottom:0;
+  margin:0;
+}
+
+h3 {
+  font-family: rift, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5em;
+  padding-bottom:0;
+  margin: .3em;
+  margin-left:0;
+}
+
+h4 {
+  font-family: rift, sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 2.2em;
+  margin-left:0;
+  margin-bottom: 0;
+}
 
+.fill {
+  flex:1;
 }
-.social-link {
-  -webkit-transition-duration: 0.4s; /* Safari */
-   transition-duration: 0.4s;
-   -webkit-text-stroke-width: 2px;
-   -webkit-text-stroke-color: black;
-   -webkit-tap-highlight-color: transparent;
-  margin:0.2em;
-  color: #EEEEEE;
+
+.spacer {
+  margin:1em;
 }
-.social-link:hover {
-  outline: none;
-  color: #DDDDDD;
-  background-color: transparent;
+
+@media (max-height: 450px) {
+  .main-logo {
+    margin-top:2em;
+  }
 }
-.social-link:active {
-  outline: none;
-  color: #54C2ED;
-  background-color: transparent;
+
+@media (max-height: 450px), (max-width: 450px) {
+  .flex-container {
+    width: 90%;
+  }
+  
+  h2 {
+    font-size:1.5em;
+  }
+  h1 {
+    font-size:4em;
+  }
 }
+
+a {
+  text-decoration: none;
+  color:#ED1C24;
+}
+
+a:hover {
+  color:#c1272d;
+}
+
 
 p {
   margin-top: 0;
