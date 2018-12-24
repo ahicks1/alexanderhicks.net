@@ -32,6 +32,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 3em;
+  line-height: 0.9;
 }
 
 
@@ -39,7 +40,7 @@ body {
 .main-logo {
   width: 9em;
   margin-top: 10em;
-  margin-bottom: .5em;
+  margin-bottom: 8pt;
 }
 
 h1 {
@@ -68,7 +69,8 @@ h3 {
   font-style: normal;
   font-size: 1.5em;
   padding-bottom:0;
-  margin: .3em;
+  margin: 4pt;
+  margin-bottom: 6pt;
   margin-left:0;
 }
 
